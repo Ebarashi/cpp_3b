@@ -81,8 +81,8 @@ namespace zich
         {
                 new_values[(unsigned int)(i)] = this->values[(unsigned int)(i)] - mat.values[(unsigned int)(i)];
         }
-        Matrix mat3(new_values, this->rows, this->cols);
-        return mat3;
+        Matrix new_mat(new_values, this->rows, this->cols);
+        return new_mat;
     }
 
      Matrix &Matrix::operator-=(const Matrix &mat)
@@ -411,7 +411,6 @@ namespace zich
 
             }
         }
-
 
         mat.values = matrix;
         mat.rows = row;
