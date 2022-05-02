@@ -340,7 +340,16 @@ namespace zich
         for (unsigned int i = 0; i < input.size(); i++){
                       
             char curr_data = input.at(i);
+            
 
+            if (input[i] == ',')
+            {
+                
+                if (i + 1 < input.size() && input[i + 1] != ' ') {
+                    
+                    throw invalid_argument("bad input");
+                }
+            }
             
             if (curr_data == '[')
             {

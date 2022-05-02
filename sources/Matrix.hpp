@@ -73,6 +73,6 @@ namespace zich
 
         // Input and Output
         friend std::ostream& operator<<(std::ostream& output, const Matrix& matrix);
-        friend std::istream& operator>>(std::istream& input, Matrix& matrix);
+        friend std::istream& operator>>(std::istream& is, Matrix& matrix);
     };
 }  
