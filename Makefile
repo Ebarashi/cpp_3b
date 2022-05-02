@@ -25,7 +25,7 @@ test: TestRunner.o StudentTest1.o StudentTest2.o StudentTest3.o $(OBJECTS)
 $(OBJECT_PATH)/%.o: $(SOURCE_PATH)/%.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
-StudentTest1.cpp:  # Itzik
+StudentTest1.cpp:  # Itzik curl https://raw.githubusercontent.com/Ebarashi/cpp_3/master/Test.cpp > $@*/
 	curl https://raw.githubusercontent.com/itzikbs1/Ex3_A_Cpp/master/Test.cpp > $@
 
 StudentTest2.cpp:  # Itamar Almog

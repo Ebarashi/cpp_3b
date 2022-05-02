@@ -36,7 +36,6 @@ namespace zich
         }
 
         Matrix(const vector<double> &values, const int row, const int col);
-        Matrix();
         ~Matrix();
 
         //Add
